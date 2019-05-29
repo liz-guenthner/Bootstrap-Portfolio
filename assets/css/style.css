@@ -1,0 +1,163 @@
+html, body {
+    height: 100%;
+}
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    color: #777;
+    margin: 0 auto;
+    width:100%;
+    background-image: url('../images/what-the-hex.png');
+    background-repeat: repeat;
+    display: flex;
+    flex-direction: column;
+}
+#header-container {
+    width:100%;
+    border-bottom:2px solid #cccccc;
+    display:inline-block;
+    background-color: #fff;
+}
+#header-contents {
+    margin:0;
+    overflow: hidden;
+    clear: both;
+}
+header {
+    width: 25%;
+    float:left;
+    font-family: Georgia, Times, Times New Roman, serif;
+    color: #fff;
+    background-color: #4aaaa5;
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+nav {
+    width:30%;
+    float:right;
+    margin-top: 29px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    clear:both;
+    float:right;
+    margin:0;
+}
+li {
+    float:left;
+    padding: 0 10px;
+    font-size: 15px;
+}
+li.border-right{
+    border-right: 2px solid #cccccc;
+}
+a {
+    color: #777;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+#main-content {
+    width:960px;
+    display: block;
+    overflow:hidden;
+    clear:both;
+    margin: 20px auto 80px auto;
+    border: 1px solid #dddddd;
+    background-color: #fff;
+}
+section {
+    margin: 0 30px;
+}
+h1 {
+    font-family: Georgia, Times, Times New Roman, serif;
+    color: #4aaaa5;
+    border-bottom: 2px solid #dddddd;
+    padding:25px 0;
+    margin:0;
+    font-size:22px;
+}
+.about-me-content {
+    margin:20px 0;
+}
+img {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+p {
+    margin-right:10px;
+    color: #777;
+    font-size: 15px;
+    font-weight:normal;
+    line-height: 20px;
+}
+.content {
+    flex: 1 0 auto;
+}
+form {
+    margin: 20px 0;
+    font-size: 15px;
+}
+input, textarea {
+    width: 100%;
+    margin:5px 0 15px 0;
+    padding: 5px;
+    color: #777;
+}
+textarea {
+    border-color: #cccccc;
+}
+.submit-button {
+    width: 100px;
+    border-radius: 0px;
+    background-color: #4aaaa5;
+    border:none;
+    color: #fff;
+    padding:7px 0;
+    font-size:15px;
+}
+.gallery {
+    margin: 20px 0;
+}
+.asset-block {
+    position:relative;
+    float:left;
+}
+img.asset-image {
+    float:left;
+}
+.ribbon {
+    color: #fff;
+    position:absolute;
+    width: 300px;
+    background-color: #4aaaa5;
+    padding: 20px 0;
+    text-align: center;
+    font-family: Georgia, Times, Times New Roman, serif;
+    top: 156px;
+    font-size:18px;
+}
+footer {
+    margin-top: 15px;
+    text-align: center;
+    padding: 30px 0;
+    color: #cccccc;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
+    font-size:13px;
+    flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    #header-contents {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+    header {
+        font-size: 22px;
+        padding:25px 0;
+    }
+}
