@@ -62,11 +62,13 @@ body {
 }
 .container {
     padding:0;
+    margin-bottom:100px;
 }
 .navbar {
     padding:0;
     width: 100%;
     margin:0;
+    border-bottom: 2px solid #dddddd;
 }
 .navbar-brand {
     float:left;
@@ -119,6 +121,7 @@ a {
     margin: 20px auto 80px auto;
     border: 1px solid #dddddd;
     background-color: #fff;
+    margin: 20px;
 }
 section {
     margin: 0 30px;
@@ -130,6 +133,7 @@ h1 {
     padding:25px 0;
     margin:0;
     font-size:22px;
+    font-weight:bold;
 }
 .about-me-content {
     margin:20px 0;
@@ -165,7 +169,7 @@ textarea {
     background-color: #4aaaa5;
     border:none;
     color: #fff;
-    padding:7px 0;
+    padding:12px 0;
     font-size:15px;
 }
 .gallery {
@@ -189,7 +193,7 @@ img.asset-image {
     padding: 20px 0;
     text-align: center;
     font-family: Georgia, Times, Times New Roman, serif;
-    bottom: 20px;
+    bottom: 10px;
     font-size:18px;
 }
 form {
@@ -213,6 +217,9 @@ footer {
         padding: 15px 0;
         margin: 0;
         vertical-align:middle;
+    }
+    #main-content {
+        margin: 20px 0;
     }
 }
 
