@@ -4,61 +4,74 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-  <div class="content">
-    <div id="header-container">
-      <div id="header-contents">
-        <header>
-          Liz Guenthner
-        </header>
-        <nav>
-          <ul>
-            <li class="border-right"><a href="index.html">About</a></li>
-            <li class="border-right"><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+  <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light row">
+
+        <!-- Our brand / logo -->
+        <a class="navbar-brand col-xs-12 col-md-4 col-lg-3" href="index.html">Liz Guenthner</a>
+  
+          <!-- Collapsible button -->
+        <div class="col-xs-12 col-md-8 col-lg-9">
+          <ul class="navbar-nav">
+  
+            <!-- The links of our navbar -->
+            <li class="nav-item border-right">
+              <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+            </li>
+  
+            <li class="nav-item border-right active">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+  
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
           </ul>
-        </nav>
-      </div>
-    </div>
+        </div>
+      </nav>
 
     <div id="main-content">
       <section>
           <h1>Portfolio</h1>
           <div class="gallery">
             <div class="row">
-              <div class="asset-block">
-                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" width="300" alt="alt text">
+              <div class="asset-block col-xs-12 col-md-5">
+                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" alt="alt text">
                 <div class="ribbon">
                   Five Years Ago
                 </div>
               </div>
-              <div class="asset-block">
-                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" width="300" alt="alt text">
+              <div class="asset-block col-xs-12 col-md-5">
+                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" alt="alt text">
                 <div class="ribbon">
                   My Dark Hair Days
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="asset-block">
-                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" width="300" alt="alt text">
+              <div class="asset-block col-xs-12 col-md-5">
+                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" alt="alt text">
                 <div class="ribbon">
                   I Landscaped This!
                 </div>
               </div>
-              <div class="asset-block">
-                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" width="300" alt="alt text">
+              <div class="asset-block col-xs-12 col-md-5">
+                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" alt="alt text">
                 <div class="ribbon">
                   This Chair is Blue Now
                 </div>
               </div>
             </div>
             <div class="row">
-              <div class="asset-block">
-                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" width="300" alt="alt text">
+              <div class="asset-block col-xs-12 col-md-5">
+                <img class="asset-image" src="assets/images/liz-and-simon-small.jpg" alt="alt text">
                 <div class="ribbon">
                   Hi Simon!
                 </div>
@@ -69,7 +82,13 @@
     </div>
   </div>
 
-  <footer>Copyright &copy; 2019</footer>
+  <footer class="fixed-bottom">Copyright &copy; 2019</footer>
+
+  <!-- jQuery, javascript file for the Bootstrap's javascript file to function -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Bootstrap's javascript file that allows the dropdown menu to work  -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 html, body {
     height: 100%;
 }
@@ -11,57 +60,59 @@ body {
     display: flex;
     flex-direction: column;
 }
-#header-container {
-    width:100%;
-    border-bottom:2px solid #cccccc;
-    display:inline-block;
-    background-color: #fff;
+.container {
+    padding:0;
 }
-#header-contents {
+.navbar {
+    padding:0;
+    width: 100%;
     margin:0;
-    overflow: hidden;
-    clear: both;
 }
-header {
-    width: 25%;
+.navbar-brand {
     float:left;
     font-family: Georgia, Times, Times New Roman, serif;
-    color: #fff;
     background-color: #4aaaa5;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
     font-size: 15px;
     font-weight: bold;
+    font-size: 1.4em;
+    margin:0;
 }
-nav {
-    width:30%;
-    float:right;
-    margin-top: 29px;
+
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover {
+    color:#fff;
 }
-ul {
+.navbar-nav {
+ flex-direction:row;
+ float:none;
+ padding: 15px 0;
+ width: 200px;
+ margin: 0 auto;
+}
+
+nav ul {
     list-style-type: none;
     overflow: hidden;
     clear:both;
     float:right;
     margin:0;
 }
-li {
+nav li {
     float:left;
     padding: 0 10px;
     font-size: 15px;
 }
-li.border-right{
+nav li.border-right{
     border-right: 2px solid #cccccc;
 }
+
 a {
     color: #777;
     text-decoration: none;
 }
-a:hover {
-    text-decoration: underline;
-}
 #main-content {
-    width:960px;
     display: block;
     overflow:hidden;
     clear:both;
@@ -83,19 +134,17 @@ h1 {
 .about-me-content {
     margin:20px 0;
 }
-img {
+img.liz-pic {
     float: left;
     margin: 0 20px 20px 0;
+    width:100%;
 }
 p {
-    margin-right:10px;
+    margin: 0 10px 20px 0;
     color: #777;
     font-size: 15px;
     font-weight:normal;
     line-height: 20px;
-}
-.content {
-    flex: 1 0 auto;
 }
 form {
     margin: 20px 0;
@@ -120,25 +169,31 @@ textarea {
     font-size:15px;
 }
 .gallery {
-    margin: 20px 0;
+    margin: 20px 20px;
 }
 .asset-block {
     position:relative;
     float:left;
+    padding:0;
+    margin: 0 20px 20px 0;
 }
 img.asset-image {
     float:left;
+    width: 100%;
 }
 .ribbon {
     color: #fff;
     position:absolute;
-    width: 300px;
+    width: 100%;
     background-color: #4aaaa5;
     padding: 20px 0;
     text-align: center;
     font-family: Georgia, Times, Times New Roman, serif;
-    top: 156px;
+    bottom: 20px;
     font-size:18px;
+}
+form {
+    margin: 20px 0 !important;
 }
 footer {
     margin-top: 15px;
@@ -152,12 +207,17 @@ footer {
 }
 
 @media only screen and (min-width: 768px) {
-    #header-contents {
-        max-width: 960px;
-        margin: 0 auto;
+    .navbar-nav {
+        flex-direction:row;
+        float:right;
+        padding: 15px 0;
+        margin: 0;
+        vertical-align:middle;
     }
-    header {
-        font-size: 22px;
-        padding:25px 0;
+}
+
+@media only screen and (min-width: 992px) {
+    .navbar-nav {
+        width: 255px;
     }
 }
