@@ -81,7 +81,9 @@ body {
     font-size: 1.4em;
     margin:0;
 }
-
+strong {
+    font-weight:bold;
+}
 .navbar-light .navbar-brand,
 .navbar-light .navbar-brand:hover {
     color:#fff;
